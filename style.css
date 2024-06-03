@@ -1,6 +1,50 @@
-.dog-bg {
-    background-color: #1e99c6;
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --brownDecorParaColor: #c7a17a;
 }
-.item_box{
-    background-color: #ffdf4f;
+.hero {
+  height: 100vh;
+  background-image: url(./images/bgimage.jpg);
+  background-repeat: no-repeat;
+}
+.transbox {
+  background-color: rgba(45, 45, 45, 0.75);
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  height: 100vh;
+  font-weight: bold;
+}
+.header {
+  padding-top: 30vh;
+}
+.brown-coffee {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  color: var(--brownDecorParaColor);
+  font-size: 24px;
+}
+h1, h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 115px;
+}
+#aboutCoffee {
+  background-color: #f2f0ec;
+}
+.item_box {
+  background-color: #ffdf4f;
+}
+.carousel {
+  width: 600px;
+  max-width: 100%;
+}
+.changeColor {
+  width: 100vw;
+  height: 110px;
+  background-image: url(./images/lineb.jpg);
+}
+#contacts{
+  background-color: #27292b;
 }
