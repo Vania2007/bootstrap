@@ -128,6 +128,23 @@ h2 {
 .emailInfo a:hover {
   color: #fff;
 }
+.businessCard{
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: solid #f2f0ec;
+}
+.personText{
+  margin: 0 30px;
+}
+.personText h2{
+  font-size: 34px;
+  color: #c7a17a;
+}
+.personText hr{
+  color: #c7a17a;
+}
 .openTime,
 .location {
   display: flex;
@@ -153,10 +170,10 @@ footer h2 {
 }
 .globalInfo h2,
 .globalInfo i {
-  font-size: 52px;
+  font-size: 48px;
 }
 .globalInfo p {
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
 }
 .footer {
@@ -166,6 +183,9 @@ footer h2 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+}
+.copyright p{
+  font-size: 18px;
 }
 ul.socialMedia {
   list-style: none;
@@ -204,6 +224,15 @@ ul.socialMedia li {
   }
   iframe {
     width: 100%;
+  }
+  .businessCard{
+    flex-direction: column;
+  }
+  .cardRev{
+    flex-direction: column-reverse;
+  }
+  .personText{
+    margin-top: 25px;
   }
   .globalInfo {
     flex-direction: column;
