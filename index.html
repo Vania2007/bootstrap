@@ -32,22 +32,23 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div
+          class="collapse navbar-collapse"
+          style="justify-content: right"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0"
+            style="margin: 0 !important"
+          >
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="./menu.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
+              <a class="nav-link" href="./aboutus.html">About Us</a>
             </li>
           </ul>
         </div>
@@ -62,7 +63,7 @@
       </div>
     </div>
     <section id="aboutCoffee">
-      <div class="p-5 row">
+      <div class="p-5 row aboutCoffeeFlex">
         <div class="col-8">
           <h2>Coffee</h2>
           <h3>Discover the Rich World of Coffee</h3>
@@ -97,14 +98,15 @@
             coffee industry.
           </p>
         </div>
-        <div class="col-4">
-          <img src="./images/aboutCoffee.jpg" alt="" />
+        <div class="col-4 aboutCoffeeImg">
+          <img src="./images/aboutCoffeeHorisontal.jpg" alt="" />
         </div>
       </div>
     </section>
-    <section id="aboutCoffee">
-      <div class="p-5 row">
-        <div class="col-6">
+    <div class="changeColorWhite"></div>
+    <section id="aboutUs">
+      <div class="p-5 row aboutUsFlex">
+        <div class="col-6 aboutUsImg">
           <img src="./images/aboutUs.jpg" alt="" />
         </div>
         <div class="col-6">
@@ -133,13 +135,14 @@
             us and become a part of the Coffee Shop family – where every cup
             tells a story.
           </p>
-          <button type="button" class="btn btn-primary">Learn More</button>
+          <button type="button" class="btn btn-primary coffeeButton">
+            Learn More
+          </button>
         </div>
       </div>
     </section>
-
     <section id="topMenu">
-      <div class="container cards d-flex justify-content-around pt-5">
+      <div class="container cards d-flex justify-content-around pt-5 menu">
         <div class="card" style="width: 18rem">
           <img src="./images/espresso.jpg" class="card-img-top" alt="" />
           <div class="card-body">
@@ -148,7 +151,9 @@
               Espresso is the heart and soul of coffee culture, delivering a
               concentrated and intense flavor experience in every sip.
             </p>
-            <a href="./menu.html" class="btn btn-primary">Learn More</a>
+            <a href="./menu.html" class="btn btn-primary coffeeButton"
+              >Learn More</a
+            >
           </div>
         </div>
         <div class="card" style="width: 18rem">
@@ -160,7 +165,9 @@
               steamed milk, creating a smooth and comforting beverage that is
               perfect for any time of day.
             </p>
-            <a href="./menu.html" class="btn btn-primary">Learn More</a>
+            <a href="./menu.html" class="btn btn-primary coffeeButton"
+              >Learn More</a
+            >
           </div>
         </div>
         <div class="card" style="width: 18rem">
@@ -171,7 +178,9 @@
               Cappuccino is a timeless coffee classic, known for its harmonious
               blend of bold espresso, steamed milk, and a rich, frothy top.
             </p>
-            <a href="./menu.html" class="btn btn-primary">Learn More</a>
+            <a href="./menu.html" class="btn btn-primary coffeeButton"
+              >Learn More</a
+            >
           </div>
         </div>
       </div>
@@ -257,124 +266,149 @@
     </section>
     <div class="changeColor"></div>
     <section id="contacts">
-      <div class="container row">
-        <div class="box col-6"></div>
-        <h3 class="brown-coffee">Write us</h3>
-        <h2 style="color: white">Contacts</h2>
-        <i class="fa-solid fa-phone" style="color: #c7a17a"></i>
-        <p>+(380) 56 789 1234</p>
-        <i class="fa-solid fa-envelope" style="color: #c7a17a"></i>
-        <p>coffeeshop@mymail.com</p>
-        <div class="container mt-5" id="contacts">
-          <h3 class="text-center">Contacts</h3>
-          <form action="/action_page.php" class="was-validated">
-            <div class="mb-3 mt-3">
-              <label for="uname" class="form-label">Username:</label>
-              <input
-                type="text"
-                class="form-control"
-                id="uname"
-                placeholder="Enter username"
-                name="uname"
-                required
-              />
-              <div class="valid-feedback">Valid.</div>
-              <div class="invalid-feedback">Please fill out this field.</div>
+      <div class="container contacts">
+        <div class="rowFlex">
+          <div class="box1">
+            <h3 class="brown-coffee">Write us</h3>
+            <h2 style="color: white">Contacts</h2>
+            <div class="phoneInfo">
+              <i class="fa-solid fa-phone" style="color: #c7a17a"></i>
+              <a href="tel:+380567891234">+(380) 56 789 1234</a>
             </div>
-            <div class="mb-3 mt-3">
-              <label for="uname" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="uname"
-                placeholder="Enter email"
-                name="uname"
-                required
-              />
-              <div class="valid-feedback">Valid.</div>
-              <div class="invalid-feedback">Please fill out this field.</div>
+            <div class="emailInfo">
+              <i class="fa-solid fa-envelope" style="color: #c7a17a"></i>
+              <a href="mailto:coffeeshop@mymail.com">coffeeshop@mymail.com</a>
             </div>
-            <div class="form-check mb-3">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="myCheck"
-                name="remember"
-                required
-              />
-              <label class="form-check-label" for="myCheck"
-                >I agree</label
-              >
-              <div class="valid-feedback">Valid.</div>
-              <div class="invalid-feedback">Check this checkbox to continue.</div>
+            <div class="container mt-5" id="contacts">
+              <form action="./index.html" class="was-validated">
+                <div class="mb-3 mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="uname"
+                    placeholder="Full Name*"
+                    name="uname"
+                    required
+                  />
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
+                </div>
+                <div class="mb-3 mt-3">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="uname"
+                    placeholder="Phone number*"
+                    name="uname"
+                    required
+                  />
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
+                </div>
+                <div class="mb-3 mt-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="uname"
+                    placeholder="E-mail"
+                    name="uname"
+                    required
+                  />
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-warning m-auto my-5 d-block coffeeButton submitButton"
+                >
+                  Send
+                </button>
+              </form>
             </div>
-            <button type="submit" class="btn btn-warning m-auto my-5 d-block">Submit</button>
-          </form>
           </div>
-          <div class="box col-6">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192.38290630276805!2d36.23846568167213!3d50.011494410395386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0d88d1109d9%3A0x665db5a63a08b288!2z0KHRg9C80YHQutC-0Lkg0YDRi9C90L7Qug!5e1!3m2!1sru!2sua!4v1717441592230!5m2!1sru!2sua" width="600" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <div class="box2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192.38290630276805!2d36.23846568167213!3d50.011494410395386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0d88d1109d9%3A0x665db5a63a08b288!2z0KHRg9C80YHQutC-0Lkg0YDRi9C90L7Qug!5e1!3m2!1sru!2sua!4v1717441592230!5m2!1sru!2sua"
+              max-width="100%"
+              height="600px"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
     </section>
-    <div id="wrapper" class="row my-5">
-      <div class="col-sm-12 col-md-6 col-lg-4 col-12">
-        <div class="item_box card text-center my-5 p-3">
-          <img src="./images/dog1.png" class="card-img-top" alt="" />
-          <h5 class="item_title pt-5">Black</h5>
-
-          <p>Price: <span class="item_price">120</span>$</p>
-          <button class="add_item btn btn-lg btn-warning" data-id="1">
-            Add to card
-          </button>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 col-12">
-        <div class="item_box card text-center my-5 p-3">
-          <img src="./images/dog2.png" class="card-img-top" alt="" />
-          <h5 class="item_title pt-5">Jack</h5>
-          <p>Price: <span class="item_price">120</span>$</p>
-          <button class="add_item btn btn-lg btn-warning" data-id="5">
-            Add to card
-          </button>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-md-6 col-lg-4 col-12">
-        <div class="item_box card text-center my-5 p-3">
-          <img src="./images/dog3.png" class="card-img-top" alt="" />
-          <h5 class="item_title pt-5">Lord</h5>
-          <p>Price: <span class="item_price">600</span>$</p>
-          <button class="add_item btn btn-lg btn-warning" data-id="3">
-            Add to card
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="row justify-content-center" id="books"></div>
-    <button onclick="loadBooks()" class="m-auto">Load more books</button>
-
-    <div class="mt-5 p-4 bg-dark text-white text-center">
-      <p>Footer</p>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./script.js"></script>
-    <script>
-      function loadBooks() {
-        let cards = "";
-        for (let i = 0; i < books.length; i++) {
-          cards += `<div class="bookWrap col-sm-4 col-12">
-          <div class="card text-center my-5 p-3">
-              <div class="card-title"><h5>${books[i].name}</h5></div>
-              <div class="image card-body"><img src="${books[i].imageCover}" /></div>
-              <div class="card-text"><p>${books[i].author}</p></div>
+    <footer>
+      <div class="globalInfo pt-5">
+        <div class="openTime">
+          <i
+            class="fa-solid fa-clock"
+            style="color: #c7a17a;"
+          ></i>
+          <div class="openTimeText">
+            <h2>Open hours</h2>
+            <p>Mon-Sun: 9:30 - 18:30</p>
           </div>
-      </div>\n`;
-        }
-        let booksElement = document.getElementById("books");
-        booksElement.innerHTML = cards;
-      }
-    </script>
+        </div>
+        <div class="location">
+          <i
+            class="fa-solid fa-location-dot"
+            style="color: #c7a17a;"
+          ></i>
+          <div class="locationText">
+            <h2>Location</h2>
+            <p>Coffee Shop, Sumsky market, Kharkiv, Ukraine</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footerNavigation container">
+          <a href="./index.html"
+            ><img src="./images/logo.svg" width="150px" alt=""
+          /></a>
+          <ul class="socialMedia">
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-square-instagram fa-2xl"
+                  style="color: #c7a17a"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-square-github fa-2xl"
+                  style="color: #c7a17a"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-square-facebook fa-2xl"
+                  style="color: #c7a17a"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <hr class="cotainer" style="color: aliceblue; margin: 0 100px" />
+        <div class="pt-5 px-5 pb-3 text-white text-center copyright">
+          <p>&copy; Created by Ivan Momot</p>
+          <p>All rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
