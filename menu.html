@@ -54,69 +54,136 @@
         </div>
       </div>
     </nav>
-    
+    <div class="container mt-5" id="Menu">
+      <p class="brown-coffee text-center">Our drinks</p>
+      <h2 class="text-center">Menu</h2>
+      <div id="cards" class="row mb-5">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-12">
+          <div class="item_box card text-center my-5 p-3">
+            <img src="./images/espresso.jpg" class="card-img-top" alt="..." />
+            <h5 class="item_title pt-4">Espresso</h5>
+            <div class="price">
+              <img src="./images/dollar.svg" width="20px" alt="" />
+              <p class="money">$2</p>
+            </div>
+            <p class="desc">
+              Espresso is the purest expression of coffee, delivering a powerful
+              punch of rich, complex flavors in a single, concentrated shot.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-12">
+          <div class="item_box card text-center my-5 p-3">
+            <img src="./images/latte.jpg" class="card-img-top" alt="..." />
+            <h5 class="item_title pt-4">Latte</h5>
+            <div class="price">
+              <img src="./images/dollar.svg" width="20px" alt="" />
+              <p class="money">$5.5</p>
+            </div>
+            <p class="desc">
+              A latte is the perfect blend of rich espresso and creamy steamed
+              milk, offering a smooth and luxurious coffee experience.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 col-12">
+          <div class="item_box card text-center my-5 p-3">
+            <img src="./images/cappuccino.jpg" class="card-img-top" alt="..." />
+            <h5 class="item_title pt-4">Cappuccino</h5>
+            <div class="price">
+              <img src="./images/dollar.svg" width="20px" alt="" />
+              <p class="money">$5</p>
+            </div>
+            <p class="desc">A cappuccino is a perfect balance of bold espresso, steamed milk, and airy foam, creating a delightful and invigorating coffee experience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      onclick="loadMenu(menu)"
+      type="button"
+      class="btn btn-primary m-auto my-5 d-block coffeeButton"
+    >
+      Load more
+    </button>
     <footer>
-        <div class="globalInfo pt-5">
-          <div class="openTime">
-            <i
-              class="fa-solid fa-clock"
-              style="color: #c7a17a;"
-            ></i>
-            <div class="openTimeText">
-              <h2>Open hours</h2>
-              <p>Mon-Sun: 9:30 - 18:30</p>
-            </div>
-          </div>
-          <div class="location">
-            <i
-              class="fa-solid fa-location-dot"
-              style="color: #c7a17a;"
-            ></i>
-            <div class="locationText">
-              <h2>Location</h2>
-              <p>Coffee Shop, Sumsky market, Kharkiv, Ukraine</p>
-            </div>
+      <div class="globalInfo pt-5">
+        <div class="openTime">
+          <i class="fa-solid fa-clock" style="color: #c7a17a"></i>
+          <div class="openTimeText">
+            <h2>Open hours</h2>
+            <p>Mon-Sun: 9:30 - 18:30</p>
           </div>
         </div>
-        <div class="footer">
-          <div class="footerNavigation container">
-            <a href="./index.html"
-              ><img src="./images/logo.svg" width="150px" alt=""
-            /></a>
-            <ul class="socialMedia">
-              <li>
-                <a href="#"
-                  ><i
-                    class="fa-brands fa-square-instagram fa-2xl"
-                    style="color: #c7a17a"
-                  ></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i
-                    class="fa-brands fa-square-github fa-2xl"
-                    style="color: #c7a17a"
-                  ></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i
-                    class="fa-brands fa-square-facebook fa-2xl"
-                    style="color: #c7a17a"
-                  ></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <hr class="cotainer" style="color: aliceblue; margin: 0 100px" />
-          <div class="pt-5 px-5 pb-3 text-white text-center copyright">
-            <p>&copy; Created by Ivan Momot</p>
-            <p>All rights Reserved</p>
+        <div class="location">
+          <i class="fa-solid fa-location-dot" style="color: #c7a17a"></i>
+          <div class="locationText">
+            <h2>Location</h2>
+            <p>Coffee Shop, Sumsky market, Kharkiv, Ukraine</p>
           </div>
         </div>
-      </footer>
+      </div>
+      <div class="footer">
+        <div class="footerNavigation container">
+          <a href="./index.html"
+            ><img src="./images/logo.svg" width="150px" alt=""
+          /></a>
+          <ul class="socialMedia">
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-square-instagram fa-2xl"
+                  style="color: #c7a17a"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-square-github fa-2xl"
+                  style="color: #c7a17a"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-square-facebook fa-2xl"
+                  style="color: #c7a17a"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <hr class="cotainer" style="color: aliceblue; margin: 0 100px" />
+        <div class="pt-5 px-5 pb-3 text-white text-center copyright">
+          <p>&copy; Created by Ivan Momot</p>
+          <p>All rights Reserved</p>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      function loadMenu(menu) {
+        let cards = "";
+        for (let i = 0; i < menu.length; i++) {
+          cards += `<div class="col-sm-12 col-md-6 col-lg-4 col-12">
+          <div class="item_box card text-center my-5 p-3">
+              <img src="${menu[i].image}" class="card-img-top"/>              
+              <h5 class="item_title pt-4">${menu[i].name}</h5>
+              <div class="price">
+              <img src="./images/dollar.svg" width="20px" alt="" />
+              <p class="money">$${menu[i].price}</p>
+              </div>  
+              <p class="card-text">${menu[i].desc}</p>
+          </div>
+      </div>\n`;
+        }
+        let menuElement = document.getElementById("cards");
+        menuElement.innerHTML = cards;
+      }
+    </script>
   </body>
 </html>
