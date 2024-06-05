@@ -48,7 +48,7 @@
               <a class="nav-link active" aria-current="page" href="#">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./aboutus.html">About Us</a>
+              <a class="nav-link" href="./aboutUs.html">About Us</a>
             </li>
           </ul>
         </div>
@@ -95,7 +95,11 @@
               <img src="./images/dollar.svg" width="20px" alt="" />
               <p class="money">$5</p>
             </div>
-            <p class="desc">A cappuccino is a perfect balance of bold espresso, steamed milk, and airy foam, creating a delightful and invigorating coffee experience.</p>
+            <p class="desc">
+              A cappuccino is a perfect balance of bold espresso, steamed milk,
+              and airy foam, creating a delightful and invigorating coffee
+              experience.
+            </p>
           </div>
         </div>
       </div>
@@ -104,6 +108,7 @@
       onclick="loadMenu(menu)"
       type="button"
       class="btn btn-dark m-auto my-5 d-block coffeeButton"
+      id="loadMenuBtn"
     >
       Load more
     </button>
@@ -167,6 +172,7 @@
     <script src="./script.js"></script>
     <script>
       function loadMenu(menu) {
+        document.getElementById("loadMenuBtn").remove();
         let cards = "";
         for (let i = 0; i < menu.length; i++) {
           cards += `<div class="col-sm-12 col-md-6 col-lg-4 col-12">
