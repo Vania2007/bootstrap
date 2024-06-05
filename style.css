@@ -55,7 +55,8 @@ body {
   border-color: #fff;
 }
 h1,
-h2, h5 {
+h2,
+h5 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-size: 115px;
@@ -64,9 +65,9 @@ h2, h5 {
   background-color: #f2f0ec;
 }
 .aboutUsFlex,
-  .aboutCoffeeFlex{
-    align-items: center;
-  }
+.aboutCoffeeFlex {
+  align-items: center;
+}
 .aboutCoffeeImg img,
 .aboutUsImg img {
   max-width: 100%;
@@ -84,7 +85,7 @@ h2, h5 {
   background-image: url(./images/lineb.jpg);
   margin-bottom: -5px;
 }
-.changeColorWhite{
+.changeColorWhite {
   width: 100%;
   height: 167px;
   background-image: url(./images/line-w-1.jpg);
@@ -128,37 +129,48 @@ h2, h5 {
 .emailInfo a:hover {
   color: #fff;
 }
-.businessCard{
+.headTextTeamBlock {
+  margin-top: 15px;
+}
+.headTextTeam {
+  font-size: 58px;
+}
+.businessCard {
   display: flex;
   align-items: center;
   margin-top: 40px;
   margin-bottom: 40px;
   border: solid #f2f0ec;
 }
-.personText{
+.personText {
   margin: 0 30px;
 }
-.personText h2{
+.personText h2 {
   font-size: 34px;
   color: #c7a17a;
 }
-.personText hr{
+.personText hr {
   color: #c7a17a;
 }
-.card{
+.descPerson {
+  color: #828282;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.card {
   background: #f8f5f0;
 }
-.card h5{
+.card h5 {
   font-size: 28px;
 }
-.card h5, .card  p{
+.card h5,
+.card p {
   text-align: left;
 }
-.price{
+.price {
   display: flex;
   align-items: start;
 }
-.price p{
+.price p {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 17px;
   margin: -3px 0 10px 8px;
@@ -168,7 +180,8 @@ h2, h5 {
   display: flex;
   align-items: baseline;
 }
-.openTimeText, .locationText{
+.openTimeText,
+.locationText {
   margin-left: 20px;
 }
 .copyright {
@@ -202,7 +215,7 @@ footer h2 {
   justify-content: space-between;
   margin-bottom: 50px;
 }
-.copyright p{
+.copyright p {
   font-size: 18px;
 }
 ul.socialMedia {
@@ -229,10 +242,10 @@ ul.socialMedia li {
     flex-direction: column;
     align-items: center;
   }
-  .aboutUsFlex{
+  .aboutUsFlex {
     flex-direction: column-reverse;
   }
-  .aboutUsImg{
+  .aboutUsImg {
     margin-top: 40px;
   }
   .contacts .box1,
@@ -243,13 +256,13 @@ ul.socialMedia li {
   iframe {
     width: 100%;
   }
-  .businessCard{
+  .businessCard {
     flex-direction: column;
   }
-  .cardRev{
+  .cardRev {
     flex-direction: column-reverse;
   }
-  .personText{
+  .personText {
     margin-top: 25px;
   }
   .globalInfo {
@@ -264,7 +277,7 @@ ul.socialMedia li {
     font-size: 18px;
     color: #fff;
   }
-  .copyright{
+  .copyright {
     margin: 0;
   }
 }
